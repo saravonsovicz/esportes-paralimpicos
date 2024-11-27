@@ -1,0 +1,219 @@
+/* Estilo global */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    height: 300px;
+    background: linear-gradient(135deg, #caf725, #3a0ca3, #36a56a);
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header .header-overlay {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #36a56a;
+    padding: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    background: #36a56a;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+}
+
+/* Seções */
+.section-geometric {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de participações */
+.participacoes-section {
+    background: linear-gradient(135deg, #caf725, #3a0ca3, #36a56a);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.participacoes-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.participacao-item {
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.participacao-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: linear-gradient(135deg,  #caf725, #3a0ca3, #36a56a);;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 1.5em;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.section-text {
+    flex: 1 1 300px;
+    max-width: 60%;
+}
+
+.section-images {
+    flex: 1 1 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.section-images img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section-images img:hover {
+    transform: scale(3.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.github-link {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #25409b; /* Cor do GitHub */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #007bb5; /* Cor mais escura ao passar o mouse */
+}
